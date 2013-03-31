@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>CordovaWin8Foo</title>
+
+    <!-- Références WinJS -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <script src="js/cordova-2.5.0.js"></script>
+
+    <!-- Références CordovaWin8Foo -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <p>Le contenu s'affiche ici</p>
+
+    <script type="text/javascript">
+
+        console.log("Subscribing...");
+        document.addEventListener("deviceready", function () {
+
+            navigator.notification.alert("The device is ready!");
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
